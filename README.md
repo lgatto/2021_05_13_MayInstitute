@@ -35,7 +35,7 @@ Spectrometry](https://www.rformassspectrometry.org/) initiative.
 
 #### Setup
 
-If you would like be able to reproduce the analysis I will
+If you would like to be able to reproduce the analysis I will
 demonstrate, please use a recent version of R (>= 4) and install the
 following packages.
 
@@ -53,7 +53,7 @@ BiocManager::install("RforMassSpectrometry/PSM")
 BiocManager::install("RforMassSpectrometry/Spectra")
 ```
 
-I you hit any issues, don't hesitate to open a GitHub
+If you hit any installation issues, don't hesitate to open a GitHub
 [issue](https://github.com/rformassspectrometry/docs/issues/new) or
 contact me by email.
 
@@ -73,7 +73,7 @@ To learn about the raw data infrastructure:
   mass spectrometry data* J. Proteome Res. 2021
   https://doi.org/10.1021/acs.jproteome.0c00313
 
-(Even though this paper descibes the
+(Even though this paper describes the
 [MSnbase](http://lgatto.github.io/MSnbase/) raw data backends, it also
 applies to the
 [Spectra](https://rformassspectrometry.github.io/Spectra/articles/Spectra.html)
