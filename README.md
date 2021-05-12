@@ -34,8 +34,9 @@ collaboratively in the frame of the [R for Mass
 Spectrometry](https://www.rformassspectrometry.org/) initiative.
 
 
-- Get the [slides](slides.html).
-- Get the [code](https://github.com/lgatto/2021_05_13_MayInstitute/blob/main/code.R)
+- Get the **[slides](slides.html)**
+- Read the **[talk notes]()**
+- Get the **[code](https://github.com/lgatto/2021_05_13_MayInstitute/blob/main/code.R)**
 
 #### Setup
 
