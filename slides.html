@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reproducible mass spectrometry-based research</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Laurent Gatto - @lgatt0" />
+    <meta name="date" content="2021-05-13" />
+    <link href="slides_files/remark-css/default.css" rel="stylesheet" />
+    <link href="slides_files/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Reproducible mass spectrometry-based research
+### <a href="https://lgatto.github.io/about/">Laurent Gatto</a> - <span class="citation">@lgatt0</span>
+### 13 May 2021
+
+---
+
+
+
+
+class: middle
+name: cc-by
+
+### Get the slides at [https://bit.ly/2021MayInst]()
+
+### Read the blog post at [https://bit.ly/r-ms-research]()
+
+These slides and blog post are available under a **creative common
+[CC-BY license](http://creativecommons.org/licenses/by/4.0/)**. You
+are free to share (copy and redistribute the material in any medium or
+format) and adapt (remix, transform, and build upon the material) for
+any purpose, even commercially &lt;img height="20px" alt="CC-BY"
+src="./img/cc1.jpg" /&gt;.
+
+
+---
+class: middle, inverse
+
+## Acknowledgements: May Institute team
+
+
+---
+class: middle, inverse, center
+
+## Motivating example
+
+---
+class: middle
+
+**Inverse problems** are hard! (Example and figure borrowed from
+[Stephen
+Eglen](https://sje30.github.io/talks/2017/cam_eglen.html#inverse-problems-are-hard))
+
+
+| Score (%) | grade |
+|:---------:|:-----:|
+| 70-100    |    A  |
+| 60-69     |    B  |
+| 50-59     |    C  |
+| 40-49     |    D  |
+| 0-39      |    F  |
+
+
+- **Forward problem**: I scored 68, what was my grade?
+
+- **Inverse problem**: I got a B, what was my score?
+
+---
+class: middle
+
+
+## Research sharing: the inverse problem
+
+
+![Research sharing: the inverse problem](./img/inv-paper.svg)
+
+
+---
+class: middle
+
+## Where is the scholarship?
+
+&gt; An article about computational science in a scientific publication
+&gt; is not the scholarship itself, it is merely advertising of the
+&gt; scholarship. The actual scholarship is the complete software
+&gt; development environment and that complete set of instructions that
+&gt; generated the figures.
+
+[Buckheit and Donoho 1995, after Claerbout]
+
+
+---
+class: middle, inverse, center
+
+## Why reproducibility is important
+
+---
+class: middle
+
+For **scientific reasons**: think reproducibility crisis.
+
+For **political reasons**: public trust in science, in data, in
+experts; without (public) trust in science and research, there won't
+be any funding anymore; lack of (public) trust in science leads to
+poor public health decisions!
+
+---
+class: middle, inverse, center
+
+## Reliable research
+
+---
+class: middle
+
+## Reliable research
+
+- It's not about reprodcible research.
+- It's not about open research.
+- It's about **reliable** research!
+
+
+---
+class: middle, inverse, center
+
+## Is there a cost?
+
+---
+class: middle
+
+- Yes?
+- **No!** It is a matter or relocating time!
+
+---
+class: middle
+
+## Does it take more time to work reproducibly?
+
+**No**, it is a matter or relocating time!
+
+
+&lt;img src="./img/reproducibiity_relocates_time.png" alt="Reproducibility relocates time" width="500"/&gt;
+
+
+From [Five things about open and reproducible science that every early
+career researcher should know](https://osf.io/2jt9u/).
+
+
+---
+class: middle, inverse, center
+
+## But what do we mean by reproducibility?
+
+---
+class: middle
+
+**Repeat** my experiment i.e. obtain the same tables/graphs/results
+using the same setup (data, software, ...) in the same lab or on the
+same computer.
+
+
+**Reproduce** an experiment (not mine) i.e. obtain the same
+tables/graphs/results in a different lab or on a different computer,
+using the same setup.
+
+
+**Replicate** an experiment, i.e. obtain the same (similar enough)
+tables/graphs/results in a different set up.
+
+
+Finally, **re-use** the information/knowledge from one experiment to
+run a different experiment with the aim to confirm results from
+scratch.
+
+---
+class: middle
+
+Another view (from a talk by [Kirstie
+Whitaker](https://figshare.com/articles/Publishing_a_reproducible_paper/4720996/1)):
+
+|                    | Same Data | Different Data |
+|--------------------|-----------|----------------|
+| **Same Code**      | reproduce | replicate      |
+| **Different Code** | robust    | generalisable  |
+
+
+---
+class: middle
+
+- Wheter you repeat, reproduce, replicate, validate, ... in my
+  opinion, it all boils down to **understanding** what has been done
+  and what is happening.
+
+
+---
+class: middle
+
+- Wheter you repeat, reproduce, replicate, validate, ... in my
+  opinion, it all boils down to **understanding** what has been done
+  and what is happening.
+
+- Here, I am not (that much) interested in blindly re-running
+  something to confirm that I can the same results without
+  understanding it... which in some cases can already be very
+  challenging.
+
+---
+class: middle
+
+- Wheter you repeat, reproduce, replicate, validate, ... in my
+  opinion, it all boils down to **understanding** what has been done
+  and what is happening.
+
+- Here, I am not (that much) interested in blindly re-running
+  something to confirm that I can the same results without
+  understanding it... which in some cases can already be very
+  challenging.
+
+- Note that sometimes, things are expected not the reproduce.
+
+
+---
+class: middle, inverse, center
+
+## Why reproducibility is important
+
+(as an individual researcher)
+
+---
+class: middle
+
+From
+
+&gt; Gabriel Becker [*An Imperfect Guide to Imperfect
+&gt; Reproducibility*](https://gmbecker.github.io/MayInstituteKeynote2019/outline.html)
+&gt; May Institute for Computational Proteomics, Boston, 2019.
+
+
+## (Computational) Reproducibility Is Not The Point
+
+But rather
+
+## The goal is trust, verification and guarantees
+
+
+---
+class: middle
+
+## The goal is trust, verification and guarantees
+
+- **Trust in Reporting** - result is accurately reported
+- **Trust in Implementation** - analysis code successfully implements
+  chosen methods
+- **Statistical Trust** - data and methods are (still) appropriate
+- **Scientific Trust** - result convincingly supports claim(s) about
+  underlying systems or truths
+
+---
+class: middle
+
+Reproducibility As A Trust Scale (copyright Genentech Inc)
+
+![Reproducibility As A Trust Scale](https://gmbecker.github.io/MayInstituteKeynote2019/trustscale3.png)
+
+---
+class: middle, inverse
+
+
+Take-home messages
+
+## Reproducibility isn't binary, it's a gradient, it's multidisciplinary, it's multidimensional.
+
+and
+
+## Reproducibility isn't easy.
+
+---
+class: middle, inverse, center
+
+
+## More reasons to become a reproducible research practitioner
+
+---
+class: middle
+
+![Five selfish reasons to work reproducibly](./img/2017-09-22-selfish-rr.png)
+
+&gt; And so, my fellow scientists: ask not what you can do for
+&gt; reproducibility; ask what reproducibility can do for you! Here, I
+&gt; present five reasons why working reproducibly pays off in the long
+&gt; run and is in the self-interest of every ambitious, career-oriented
+&gt; scientist.
+
+---
+class: middle
+
+## Five selfish reasons to work reproducibly
+
+1. **reproducibility helps to avoid disaster**
+2. **reproducibility makes it easier to write papers**
+3. **reproducibility helps reviewers see it your way**
+4. **reproducibility enables continuity of your work**
+5. **reproducibility helps to build your reputation**
+
+
+---
+class: middle, center, inverse
+
+## Tools for reproducible research
+
+---
+class: middle
+
+- R/Bioconductor -- many of you are familiar or even expecrts with R.
+- Writing R scripts (could also be Rmd files) to keep track of what we
+  do, and be able to easily re-run the code.
+- Package from the **R for Mass Spectrometry initiative**
+
+---
+class: middle, center, inverse
+
+## The [R for Mass Spectrometry](https://www.rformassspectrometry.org/) initiative
+
+
+---
+class: middle
+
+
+- Project page:
+  [https://www.rformassspectrometry.org/](https://www.rformassspectrometry.org/)
+- Individual package pages
+- Tutorial:
+  [https://rformassspectrometry.github.io/docs/](https://rformassspectrometry.github.io/docs/)
+
+
+.left-col-50[
+
+&lt;img src="https://www.rformassspectrometry.org/images/hex-RforMassSpectrometry.png" alt="R for Mass Spectrometry sticker" width="290"/&gt;
+
+]
+
+.right-col-50[
+
+The aim of the **R for Mass Spectrometry** initiative is to provide
+efficient, thoroughly documented, tested and flexible R software for
+the analysis and interpretation of high throughput mass spectrometry
+assays, including proteomics and metabolomics experiments. The project
+formalises the longtime collaborative development efforts of its core
+members under the R for Mass Spectrometry organisation to facilitate
+dissemination and accessibility of their work.
+
+With **Sebastian Gibb** (University Medicine Greifswald, Germany) and
+**Johannes Rainer** *Eurac Research, Italy).
+
+]
+
+
+---
+class: middle
+
+## Mass spectrometry data ([Spectra](https://rformassspectrometry.github.io/Spectra/articles/Spectra.html) package)
+
+![Raw MS data](https://www.biorxiv.org/content/biorxiv/early/2020/08/29/2020.04.29.067868.1/F4.large.jpg)
+
+(Figure from [Gatto *et al.* (2021)](https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00313))
+
+
+---
+class: middle, center, inverse
+
+## Live coding ([link]())
+
+---
+class: middle, inverse
+
+## Acknowledgements
+
+- Johannes Rainer, Sebastian Gibb
+- Users for feedaback and contributions
+
+## Thank you for your attention!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
