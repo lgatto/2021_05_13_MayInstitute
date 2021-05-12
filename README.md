@@ -2,12 +2,11 @@
 
 - May 3 – May 14, 2021
 - Northeastern University, Boston MA
-- Online
+- [https://computationalproteomics.khoury.northeastern.edu/](https://computationalproteomics.khoury.northeastern.edu/)
 
 ## Reproducible Mass Spectrometry-based Research
 
 - May 13, 2021
-- [Slides](slides.html)
 - 11:00am - 12:30pm (17:00 - 18:30 CEST)
 
 Reproducible research has been on the radar of many of us for several
@@ -33,6 +32,10 @@ that I use on a daily basis, to promote reproducibility and
 transparency in my work. These tools are developed openly and
 collaboratively in the frame of the [R for Mass
 Spectrometry](https://www.rformassspectrometry.org/) initiative.
+
+
+- Get the [slides](slides.html).
+- Get the [code](https://github.com/lgatto/2021_05_13_MayInstitute/blob/main/code.R)
 
 #### Setup
 
