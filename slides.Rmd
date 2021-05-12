@@ -18,9 +18,8 @@ options(htmltools.dir.version = FALSE)
 class: middle
 name: cc-by
 
-### Get the slides at [https://bit.ly/2021MayInst]()
 
-### Read the blog post at [https://bit.ly/r-ms-research]()
+### Links to the slides, code and blog post [bit.ly/2021-r-ms-research](http://bit.ly/2021-r-ms-research)
 
 These slides and blog post are available under a **creative common
 [CC-BY license](http://creativecommons.org/licenses/by/4.0/)**. You
@@ -364,7 +363,7 @@ class: middle
 ---
 class: middle, center, inverse
 
-## Live coding ([link]())
+## Live coding
 
 ---
 class: middle, inverse
