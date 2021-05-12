@@ -4,9 +4,10 @@
 - Northeastern University, Boston MA
 - Online
 
-## Reproducible MS-based research
+## Reproducible Mass Spectrometry-based Research
 
 - May 13, 2021
+- [Slides](slides.html)
 - 11:00am - 12:30pm (17:00 - 18:30 CEST)
 
 Reproducible research has been on the radar of many of us for several
