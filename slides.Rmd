@@ -68,7 +68,7 @@ class: middle
 ## Research sharing: the inverse problem
 
 
-![Research sharing: the inverse problem](./img/inv-paper.svg)
+![Research sharing: the inverse problem](https://lgatto.github.io/images/inv-paper.svg)
 
 
 ---
@@ -134,7 +134,7 @@ class: middle
 **No**, it is a matter or relocating time!
 
 
-<img src="./img/reproducibiity_relocates_time.png" alt="Reproducibility relocates time" width="500"/>
+<img src="https://lgatto.github.io/images/reproducibiity_relocates_time.png" alt="Reproducibility relocates time" width="500"/>
 
 
 From [Five things about open and reproducible science that every early
@@ -311,6 +311,12 @@ class: middle
   do, and be able to easily re-run the code.
 - Package from the **R for Mass Spectrometry initiative**
 
+It is also possible to set up complete pre-configured environments
+(see for example Bioconductor's [Docker
+containers](http://bioconductor.org/help/docker/) and
+[AMIs](http://bioconductor.org/help/bioconductor-cloud-ami/) or the
+[Renku](https://renkulab.io/) environment).
+
 ---
 class: middle, center, inverse
 
@@ -345,7 +351,7 @@ members under the R for Mass Spectrometry organisation to facilitate
 dissemination and accessibility of their work.
 
 With **Sebastian Gibb** (University Medicine Greifswald, Germany) and
-**Johannes Rainer** *Eurac Research, Italy).
+**Johannes Rainer** Eurac Research, Italy).
 
 ]
 
