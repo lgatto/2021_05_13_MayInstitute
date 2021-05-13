@@ -316,7 +316,7 @@ class: middle
 - R/Bioconductor -- many of you are familiar or even experts with R.
 - Writing R scripts (could also be Rmd files) to keep track of what we
   do, and be able to easily re-run the code.
-- Package from the **R for Mass Spectrometry initiative**
+- Packages from the **R for Mass Spectrometry initiative**
 
 It is also possible to set up complete pre-configured environments
 (see for example Bioconductor's [Docker
