@@ -35,7 +35,7 @@ Spectrometry](https://www.rformassspectrometry.org/) initiative.
 
 
 - Get the **[slides](slides.html)**
-- Read the **[talk notes]()**
+- Read the **[talk notes](https://lgatto.github.io/keynote-may-institute/)**
 - Get the **[code](https://github.com/lgatto/2021_05_13_MayInstitute/blob/main/code.R)**
 
 #### Setup

@@ -1,6 +1,6 @@
 ---
 title: "Reproducible mass spectrometry-based research"
-author: "[Laurent Gatto](https://lgatto.github.io/about/) - @lgatt0"
+author: "[Laurent Gatto](https://lgatto.github.io/about/) -- [CBIO](https://lgatto.github.io/cbio-lab/) -- UCLouvain (BE) -- @lgatt0"
 date: "13 May 2021"
 output:
   xaringan::moon_reader:
