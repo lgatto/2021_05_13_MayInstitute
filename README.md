@@ -56,6 +56,7 @@ BiocManager::install("RforMassSpectrometry/MsExperiment")
 BiocManager::install("RforMassSpectrometry/MsCoreUtils")
 BiocManager::install("RforMassSpectrometry/PSM")
 BiocManager::install("RforMassSpectrometry/Spectra")
+BiocManager::install("RforMassSpectrometry/SpectraVis")
 ```
 
 If you hit any installation issues, don't hesitate to open a GitHub
