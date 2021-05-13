@@ -376,6 +376,16 @@ These different parts can be stored in different modes, depending on the data *b
 
 
 ---
+class: middle
+
+- Today, I'll focus on raw data infrastructure, centred around the
+  [Spectra](https://rformassspectrometry.github.io/Spectra/articles/Spectra.html)
+  package.
+- For quantitative data -- see the
+  [QFeatures](https://rformassspectrometry.github.io/QFeatures/articles/QFeatures.html)
+  package.
+
+---
 class: middle, center, inverse
 
 ## Live coding
