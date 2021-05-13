@@ -10,6 +10,13 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+class: middle, center
+background-image: url("img/slide1.jpg")
+background-position: center
+background-size: contain
+
+
+---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
